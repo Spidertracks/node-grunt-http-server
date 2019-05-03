@@ -1,7 +1,7 @@
 "use strict";
 
 var _ = require('lodash'),
-    Server = require('http-server'),
+    Server = require('http-server-legacy'),
     opener = require("opener"),
     Divhide = require("divhide"),
     CustomPagesMiddleware = require("./libs/CustomPagesMiddleware");
