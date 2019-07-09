@@ -22,8 +22,7 @@
     "divhide": "2.0.1",
     "http-server-legacy": "0.11.1",
     "lodash": "^4.17.11",
-    "opener": "1.4.3",
-    "showdown": "1.8.6"
+    "opener": "1.4.3"
   },
   "devDependencies": {
     "grunt": "1.0.2",
