@@ -3,7 +3,6 @@
 var _ = require("lodash"),
     fs = require('fs'),
     path = require('path'),
-    showdown  = require('showdown'),
     Divhide = require("divhide");
 
 /**
@@ -36,11 +35,6 @@ var CustomPagesMiddleware = function(basePath, rules){
             var fileContent = data;
             if (err){
                 fileContent = err.toString();
-            }
-
-            // convert markdown files
-            if(path.extname(filePath) == ".md"){
-                fileContent = new showdown.Converter().makeHtml(fileContent);
             }
 
             res.setHeader('Content-Type', 'text/html');
